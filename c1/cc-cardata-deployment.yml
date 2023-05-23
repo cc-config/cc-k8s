@@ -17,7 +17,7 @@ spec:
         app: cc-cardata-service
     spec:
       containers:
-      - image: wskoung/cc-cardata-service
+      - image: wskyoung/cc-cardata-service
         name: cc-cardata-service
 
 
