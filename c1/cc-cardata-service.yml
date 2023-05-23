@@ -13,6 +13,6 @@ spec:
     targetPort: 8081
   selector:
     app: cc-cardata-service
-  type: ClusterIP
+  type: LoadBalancer
 status:
   loadBalancer: {}
