@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mynginx-n1
+  name: cc-gateway-serice
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      run: mynginx-n1
+      run: cc-gateway-serice
   template:
     metadata:
       labels:
-        run: mynginx-n1
+        run: cc-gateway-serice
     spec:
       containers:
-        - image: nginx
-          name: mynginx-n1
+        - image: wskyoung/cc-gateway-serice
+          name: cc-gateway-serice
           ports:
             - containerPort: 80
