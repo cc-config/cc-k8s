@@ -13,6 +13,6 @@ spec:
     targetPort: 8080
   selector:
     app: cc-gateway-service
-  type: loadBalancer
+  type: LoadBalancer
 status:
   loadBalancer: {}
