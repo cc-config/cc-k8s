@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: cc-cardata-service
+  name: cc-cardata-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cc-cardata-service
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: cc-cardata-service
+    spec:
+      containers:
+      - image: wskoung/cc-cardata-service
+        name: cc-cardata-service
+
+
+
+
+
+
+
