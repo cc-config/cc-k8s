@@ -6,7 +6,7 @@ metadata:
     app: cc-cardata-service
   name: cc-cardata-service
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: cc-cardata-service
